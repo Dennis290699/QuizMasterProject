@@ -1,0 +1,115 @@
+/* Estilos generales */
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+form {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button[type="submit"],
+button[type="cancel"],
+button[type="backButton"],
+button[type="showButton"],
+button[type="retryButton"] {
+  background-color: #4CAF50;
+  margin-left: 10px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="cancel"] {
+  background-color: #f44336;
+}
+
+button[type="backButton"] {
+  background-color: #f3923e;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+  z-index: 1;
+  /* Asegura que el header esté por encima de otros elementos */
+}
+
+main {
+  padding-top: 40px;
+  /* Agrega un espacio en la parte superior del contenido para evitar que se solape con el header */
+}
+
+#playerName {
+  font-weight: bold;
+}
+
+.timer {
+  font-weight: bold;
+}
+
+/* Estilos del formulario */
+.grid {
+  display: grid;
+  gap: 10px;
+}
+
+.grid div {
+  border: none;
+  padding: 10px;
+}
+
+/* Estilos para la puntuación final */
+.results {
+  margin-bottom: 20px;
+}
+
+#score {
+  font-weight: bold;
+}
+
+/* Estilos para el botón Reintentar */
+#retryButton {
+  display: none; /* Ocultar el botón inicialmente */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#retryButton:hover {
+  background-color: #4CAF50;
+}
+
+#retryButton:active {
+  background-color: #4CAF50;
+}
