@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Evento de escucha para el botón de reintentar
   retryButton.addEventListener('click', () => {
-    window.location.href = '../pages/quiz.html';
+    window.location.href = '../pages/quizz.html';
   });
 
   // Botón de volver
