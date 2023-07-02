@@ -19,7 +19,7 @@ const handleSubmit =(event) => {
     event.preventDefault();
 
     localStorage.setItem('player', input.value);
-    window.location = 'pages/quizz.html';
+    window.location = 'pages/catalog.html';
 }
 
 form.addEventListener('submit', handleSubmit);

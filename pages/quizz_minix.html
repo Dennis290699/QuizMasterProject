@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>31. ¿Cuál de las siguientes afirmaciones describe mejor la historia de Minix 3?</p>
+                    <input type="radio" name="q31" value="a"> A. Minix 3 fue desarrollado por Linus Torvalds.<br>
+                    <input type="radio" name="q31" value="b"> B. Minix 3 es un sistema operativo diseñado
+                    específicamente para supercomputadoras.<br>
+                    <input type="radio" name="q31" value="c"> C. Minix 3 se basa en el sistema operativo Unix y fue
+                    creado por Andrew S. Tanenbaum.<br>
+                    <input type="radio" name="q31" value="d"> D. Minix 3 fue lanzado por primera vez en la década de
+                    1980.<br>
+                </div>
+
+                <div>
+                    <p>32. ¿Cuál de las siguientes opciones describe correctamente el objetivo principal de Minix 3?</p>
+                    <input type="radio" name="q32" value="a"> A. Proporcionar una plataforma de juegos en línea.<br>
+                    <input type="radio" name="q32" value="b"> B. Ser un sistema operativo de propósito general para uso
+                    diario.<br>
+                    <input type="radio" name="q32" value="c"> C. Ser un sistema operativo altamente seguro y
+                    confiable.<br>
+                    <input type="radio" name="q32" value="d"> D. Competir directamente con Windows y macOS.<br>
+                </div>
+
+                <div>
+                    <p>33. ¿Cuál de las siguientes opciones describe correctamente la arquitectura de Minix 3?</p>
+                    <input type="radio" name="q33" value="a"> A. Monolítica.<br>
+                    <input type="radio" name="q33" value="b"> B. Microkernel.<br>
+                    <input type="radio" name="q33" value="c"> C. Híbrida.<br>
+                    <input type="radio" name="q33" value="d"> D. Exokernel.<br>
+                </div>
+
+                <div>
+                    <p>34. ¿Cuál fue la principal motivación para crear Minix 3?</p>
+                    <input type="radio" name="q34" value="a"> A. Competir con otros sistemas operativos comerciales.<br>
+                    <input type="radio" name="q34" value="b"> B. Proporcionar una alternativa de código abierto a
+                    Windows.<br>
+                    <input type="radio" name="q34" value="c"> C. Servir como sistema operativo para computadoras
+                    personales.<br>
+                    <input type="radio" name="q34" value="d"> D. Explorar los principios de diseño de sistemas
+                    operativos y enseñar a través del libro "Operating Systems: Design and Implementation".<br>
+                </div>
+
+                <div>
+                    <p>35. ¿Cuál es el lenguaje de programación utilizado para desarrollar Minix 3?</p>
+                    <input type="radio" name="q35" value="a"> A. C++.<br>
+                    <input type="radio" name="q35" value="b"> B. Java.<br>
+                    <input type="radio" name="q35" value="c"> C. Python.<br>
+                    <input type="radio" name="q35" value="d"> D. C.<br>
+                </div>
+
+                <div>
+                    <p>36. ¿Cuál de los siguientes comandos se utiliza para instalar Minix 3 desde un dispositivo USB?
+                    </p>
+                    <input type="radio" name="q36" value="a"> A. minix-install.<br>
+                    <input type="radio" name="q36" value="b"> B. install-minix.<br>
+                    <input type="radio" name="q36" value="c"> C. usb-install.<br>
+                    <input type="radio" name="q36" value="d"> D. make-install.<br>
+                </div>
+
+                <div>
+                    <p>37. ¿Cuál de las siguientes opciones describe correctamente cómo se inicia el entorno gráfico en
+                        Minix 3?</p>
+                    <input type="radio" name="q37" value="a"> A. El entorno gráfico se inicia automáticamente al
+                    encender el sistema.<br>
+                    <input type="radio" name="q37" value="b"> B. El usuario debe iniciar el entorno gráfico manualmente
+                    utilizando el comando "startx".<br>
+                    <input type="radio" name="q37" value="c"> C. Minix 3 no admite un entorno gráfico.<br>
+                    <input type="radio" name="q37" value="d"> D. El entorno gráfico se inicia después de ejecutar el
+                    comando "init 5".<br>
+                </div>
+
+                <div>
+                    <p>38. ¿Qué comando se utiliza para formatear una partición en Minix 3?</p>
+                    <input type="radio" name="q38" value="a"> A. format.<br>
+                    <input type="radio" name="q38" value="b"> B. mkfs.<br>
+                    <input type="radio" name="q38" value="c"> C. diskformat.<br>
+                    <input type="radio" name="q38" value="d"> D. partition.<br>
+                </div>
+
+                <div>
+                    <p>39. ¿Cuál es el directorio principal en Minix 3?</p>
+                    <input type="radio" name="q39" value="a"> A. /home.<br>
+                    <input type="radio" name="q39" value="b"> B. /usr.<br>
+                    <input type="radio" name="q39" value="c"> C. /root.<br>
+                    <input type="radio" name="q39" value="d"> D. /mnt.<br>
+                </div>
+
+                <div>
+                    <p>40. ¿Cuál es el comando utilizado para apagar o reiniciar el sistema en Minix 3?</p>
+                    <input type="radio" name="q40" value="a"> A. shutdown.<br>
+                    <input type="radio" name="q40" value="b"> B. poweroff.<br>
+                    <input type="radio" name="q40" value="c"> C. reboot.<br>
+                    <input type="radio" name="q40" value="d"> D. stop.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_minix.js"></script>
+</body>
+
+</html>

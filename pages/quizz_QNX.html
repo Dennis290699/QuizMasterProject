@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Cuál fue la empresa que desarrolló QNX?</p>
+                    <input type="radio" name="q1" value="a"> A. QNX Software Systems<br>
+                    <input type="radio" name="q1" value="b"> B. BlackBerry Limited<br>
+                    <input type="radio" name="q1" value="c"> C. Motorola<br>
+                    <input type="radio" name="q1" value="d"> D. Microsoft Windows<br>
+                </div>
+
+                <div>
+                    <p>2. Señale dos de las características del sistema operativo QNX:</p>
+                    <input type="checkbox" name="q2a" value="a"> A. Seguridad<br>
+                    <input type="checkbox" name="q2b" value="b"> B. Baja consistencia<br>
+                    <input type="checkbox" name="q2c" value="c"> C. Arquitectura modular<br>
+                    <input type="checkbox" name="q2d" value="d"> D. No tiene escalabilidad<br>
+                </div>
+
+                <div>
+                    <p>3. ¿A qué estilo pertenece el sistema operativo QNX?</p>
+                    <input type="radio" name="q3" value="a"> A. Por capas<br>
+                    <input type="radio" name="q3" value="b"> B. Microkerner<br>
+                    <input type="radio" name="q3" value="c"> C. Cliente-servidor<br>
+                    <input type="radio" name="q3" value="d"> D. Monolítico<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Cuáles son las aplicaciones en la vida real del sistema operativo QNX?</p>
+                    <input type="checkbox" name="q4a" value="a"> A. Video juegos<br>
+                    <input type="checkbox" name="q4b" value="b"> B. Realidad virtual<br>
+                    <input type="checkbox" name="q4c" value="c"> C. Equipos médicos<br>
+                    <input type="checkbox" name="q4d" value="d"> D. Automotriz<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Cuál es el nombre de la versión más específica de QNX?</p>
+                    <input type="radio" name="q5" value="a"> A. QNX Safety Suite<br>
+                    <input type="radio" name="q5" value="b"> B. QNX Neutrino<br>
+                    <input type="radio" name="q5" value="c"> C. QNX CAR Platform<br>
+                    <input type="radio" name="q5" value="d"> D. QNX SDK for Apps and Media<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Qué sistema informático usa Kevin?</p>
+                    <input type="radio" name="q6" value="a"> A. Sistema analítico<br>
+                    <input type="radio" name="q6" value="b"> B. Sistema embebido<br>
+                    <input type="radio" name="q6" value="c"> C. Sistema digital<br>
+                    <input type="radio" name="q6" value="d"> D. Sistema híbrido<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Qué se encuentra en la interfaz gráfica de QNX?</p>
+                    <input type="radio" name="q7" value="a"> A. No tiene interfaz gráfica<br>
+                    <input type="radio" name="q7" value="b"> B. Terminal únicamente<br>
+                    <input type="radio" name="q7" value="c"> C. Internet, juegos, configuraciones y utilidades<br>
+                </div>
+
+                <div>
+                    <p>8. ¿En qué año fue lanzado QNX Neutrino?</p>
+                    <input type="radio" name="q8" value="a"> A. 2015<br>
+                    <input type="radio" name="q8" value="b"> B. 2001<br>
+                    <input type="radio" name="q8" value="c"> C. 2005<br>
+                    <input type="radio" name="q8" value="d"> D. 2034<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Dónde es mayormente utilizado este sistema operativo?</p>
+                    <input type="radio" name="q9" value="a"> A. Adoptado en industrias donde la estabilidad y la
+                    seguridad son de suma importancia<br>
+                    <input type="radio" name="q9" value="b"> B. Adoptado en industrias donde la modificabilidad y la
+                    sencillez del código son de mayor importancia<br>
+                    <input type="radio" name="q9" value="c"> C. Adoptado para las industrias de videojuegos<br>
+                </div>
+
+                <div>
+                    <p>10. ¿A qué país pertenece QNX?</p>
+                    <input type="radio" name="q10" value="a"> A. Canadá<br>
+                    <input type="radio" name="q10" value="b"> B. Estados Unidos<br>
+                    <input type="radio" name="q10" value="c"> C. Reino Unido<br>
+                    <input type="radio" name="q10" value="d"> D. Australia<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_QNX.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. Seleccione la respuesta que más acorde esté con el siguiente concepto:</p>
+                    <p>Es un sistema operativo de tiempo real kernel para dispositivos embebidos que ha sido portado a
+                        35 plataformas microcontrolador. Está distribuido bajo la licencia MIT.</p>
+                    <input type="radio" name="q1" value="a"> a) FreeRTOS<br>
+                    <input type="radio" name="q1" value="b"> b) QNX<br>
+                    <input type="radio" name="q1" value="c"> c) eCos<br>
+                    <input type="radio" name="q1" value="d"> d) SOOS<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Qué es FreeRTOS?</p>
+                    <input type="radio" name="q2" value="a"> a) Sistema Operativo<br>
+                    <input type="radio" name="q2" value="b"> b) API<br>
+                    <input type="radio" name="q2" value="c"> c) Sistema Operativo en Tiempo Real<br>
+                    <input type="radio" name="q2" value="d"> d) Interfaz para Aplicaciones en Tiempo Real<br>
+                </div>
+
+                <div>
+                    <p>3. ¿Cuál es el desarrollador de FreeRTOS?</p>
+                    <input type="radio" name="q3" value="a"> a) BlackBerry<br>
+                    <input type="radio" name="q3" value="b"> b) Amazon<br>
+                    <input type="radio" name="q3" value="c"> c) Nokia<br>
+                    <input type="radio" name="q3" value="d"> d) Microsoft<br>
+                </div>
+
+                <div>
+                    <p>4. Elija la licencia que usa FreeRTOS:</p>
+                    <input type="radio" name="q4" value="a"> a) Licencia MIT<br>
+                    <input type="radio" name="q4" value="b"> b) Licencia EPL<br>
+                    <input type="radio" name="q4" value="c"> c) Licencia Comercial<br>
+                    <input type="radio" name="q4" value="d"> d) Licencia RTAI<br>
+                </div>
+
+                <div>
+                    <p>5. Seleccione cuál es el lenguaje de programación que usa FreeRTOS:</p>
+                    <input type="radio" name="q5" value="a"> a) Java<br>
+                    <input type="radio" name="q5" value="b"> b) Python<br>
+                    <input type="radio" name="q5" value="c"> c) C<br>
+                    <input type="radio" name="q5" value="d"> d) PHP<br>
+                </div>
+
+                <div>
+                    <p>6. FreeRTOS es un sistema operativo en tiempo real (RTOS) para microcontroladores y pequeños ___
+                    </p>
+                    <input type="radio" name="q6" value="a"> a) microprocesadores<br>
+                    <input type="radio" name="q6" value="b"> b) Licencias<br>
+                    <input type="radio" name="q6" value="c"> c) versiones<br>
+                    <input type="radio" name="q6" value="d"> d) SO<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cuál es la última versión de FreeRTOS?</p>
+                    <input type="radio" name="q7" value="a"> a) V10.5.1<br>
+                    <input type="radio" name="q7" value="b"> b) V5.10.1<br>
+                    <input type="radio" name="q7" value="c"> c) V4.3.5<br>
+                    <input type="radio" name="q7" value="d"> d) V8.4.2<br>
+                </div>
+
+                <div>
+                    <p>8. Seleccione las etapas de funcionamiento de FreeRTOS:</p>
+                    <input type="checkbox" name="q8" value="a"> a) Ejecutando<br>
+                    <input type="checkbox" name="q8" value="b"> b) Invernando<br>
+                    <input type="checkbox" name="q8" value="c"> c) Disponible<br>
+                    <input type="checkbox" name="q8" value="d"> d) Bloqueada<br>
+                    <input type="checkbox" name="q8" value="e"> e) Reiniciar<br>
+                    <input type="checkbox" name="q8" value="f"> f) Suspendida<br>
+                </div>
+
+                <div>
+                    <p>9. FreeRTOS proporciona métodos para múltiples subprocesos o hilos, mutexes, temporizadores de
+                        software y ___.</p>
+                    <input type="radio" name="q9" value="a"> a) semáforos<br>
+                    <input type="radio" name="q9" value="b"> b) Procesos<br>
+                    <input type="radio" name="q9" value="c"> c) multiservicios<br>
+                    <input type="radio" name="q9" value="d"> d) sistema<br>
+                </div>
+
+                <div>
+                    <p>10. Implementa múltiples subprocesos haciendo que el programa anfitrión llame a un método de
+                        marcación de subprocesos a intervalos cortos y regulares.</p>
+                    <input type="radio" name="q10" value="a"> a) FreeRTOS<br>
+                    <input type="radio" name="q10" value="b"> b) QNX<br>
+                    <input type="radio" name="q10" value="c"> c) eCos<br>
+                    <input type="radio" name="q10" value="d"> d) SOOS<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_FreeRTOS.js"></script>
+</body>
+
+</html>

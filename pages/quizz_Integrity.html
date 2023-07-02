@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <div>
+                        <p>1. ¿Qué es Integrity?</p>
+                        <input type="radio" name="q1" value="a"> a) Un sistema operativo en tiempo real<br>
+                        <input type="radio" name="q1" value="b"> b) Un software de seguridad informática<br>
+                        <input type="radio" name="q1" value="c"> c) Una herramienta de desarrollo de aplicaciones<br>
+                        <input type="radio" name="q1" value="d"> d) Un lenguaje de programación<br>
+                    </div>
+
+                    <div>
+                        <p>2. ¿Cuál es el objetivo principal de Integrity?</p>
+                        <input type="radio" name="q2" value="a"> a) Proporcionar un sistema operativo de propósito
+                        general<br>
+                        <input type="radio" name="q2" value="b"> b) Ofrecer un entorno de desarrollo integrado<br>
+                        <input type="radio" name="q2" value="c"> c) Garantizar la seguridad y confiabilidad en sistemas
+                        críticos<br>
+                        <input type="radio" name="q2" value="d"> d) Permitir la virtualización de otros sistemas
+                        operativos<br>
+                    </div>
+
+                    <div>
+                        <p>3. ¿Cuál de las siguientes certificaciones ha obtenido Integrity?</p>
+                        <input type="radio" name="q3" value="a"> a) ISO 9001 (Gestión de calidad)<br>
+                        <input type="radio" name="q3" value="b"> b) CE Mark (Cumplimiento europeo)<br>
+                        <input type="radio" name="q3" value="c"> c) DO-178B/ED-12B (Aviación)<br>
+                        <input type="radio" name="q3" value="d"> d) HIPAA (Protección de datos médicos)<br>
+                    </div>
+
+                    <div>
+                        <p>4. ¿eCos está desarrollado utilizando qué lenguajes de programación?</p>
+                        <input type="radio" name="q4" value="a"> a) C y C++<br>
+                        <input type="radio" name="q4" value="b"> b) Java y Python<br>
+                        <input type="radio" name="q4" value="c"> c) Javascript<br>
+                    </div>
+
+                    <div>
+                        <p>5. El sistema operativo eCos fue creado en 1997 por:</p>
+                        <input type="radio" name="q5" value="a"> a) Cygnus Solutions<br>
+                        <input type="radio" name="q5" value="b"> b) RedHat<br>
+                        <input type="radio" name="q5" value="c"> c) Redboot<br>
+                    </div>
+
+                    <div>
+                        <p>6. Red Hat decidió transferir los derechos de autor de eCos a:</p>
+                        <input type="radio" name="q6" value="a"> a) RedBoot<br>
+                        <input type="radio" name="q6" value="b"> b) Free Software Foundation<br>
+                        <input type="radio" name="q6" value="c"> c) Raspberry Pi<br>
+                    </div>
+
+                    <div>
+                        <p>7. eCos contiene un programa de código abierto que proporciona firmware de arranque para
+                            dispositivos integrados:</p>
+                        <input type="radio" name="q7" value="a"> a) RedBoot<br>
+                        <input type="radio" name="q7" value="b"> b) Microsoft<br>
+                        <input type="radio" name="q7" value="c"> c) Motorola<br>
+                    </div>
+
+                    <div>
+                        <p>8. El eCosPro RTOS es una extensión comercial del sistema operativo:</p>
+                        <input type="radio" name="q8" value="a"> a) eCos<br>
+                        <input type="radio" name="q8" value="b"> b) RedBoot<br>
+                        <input type="radio" name="q8" value="c"> c) Windows<br>
+                    </div>
+
+                    <div>
+                        <p>9. Se había adaptado eCosPro a todos los modelos:</p>
+                        <input type="radio" name="q9" value="a"> a) Nokia<br>
+                        <input type="radio" name="q9" value="b"> b) Samsung<br>
+                        <input type="radio" name="q9" value="c"> c) Raspberry Pi<br>
+                    </div>
+
+                    <div>
+                        <p>10. eCos OS ha sido portado a casi todas las arquitecturas actuales de:</p>
+                        <input type="radio" name="q10" value="a"> a) 16 bits<br>
+                        <input type="radio" name="q10" value="b"> b) 32 bits<br>
+                        <input type="radio" name="q10" value="c"> c) 64 bits<br>
+                    </div>
+
+                    <div>
+                        <p>11. eCos implementa una arquitectura tradicional multiproceso con un conjunto completo de
+                            primitivas de:</p>
+                        <input type="radio" name="q11" value="a"> a) Sincronización<br>
+                        <input type="radio" name="q11" value="b"> b) Implementación<br>
+                        <input type="radio" name="q11" value="c"> c) Distribución<br>
+                    </div>
+
+                    <div>
+                        <p>12. ¿eCos puede expandirse desde dispositivos de tipo SOC a sistemas más:</p>
+                        <input type="radio" name="q12" value="a"> a) Complicados<br>
+                        <input type="radio" name="q12" value="b"> b) Extensos<br>
+                        <input type="radio" name="q12" value="c"> c) Escalables<br>
+                    </div>
+
+
+                    <div class="button-container">
+                        <button type="submit">Enviar</button>
+                        <button type="cancel">Salir</button>
+                        <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                    </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_integrity.js"></script>
+</body>
+
+</html>

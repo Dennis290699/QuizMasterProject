@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. Se puede proporcionar las características necesarias del sistema operativo a través del
+                        sistema de:</p>
+                    <input type="radio" name="q1" value="a"> a) Configuración<br>
+                    <input type="radio" name="q1" value="b"> b) Arranque<br>
+                    <input type="radio" name="q1" value="c"> c) Compilacion<br>
+                </div>
+
+                <div>
+                    <p>2. ¿En qué año fue lanzado el como Asistente Personal Digital “Serie 3” de Psion Inc.?</p>
+                    <input type="radio" name="q2" value="a"> a) 1991<br>
+                    <input type="radio" name="q2" value="b"> b) 1997<br>
+                    <input type="radio" name="q2" value="c"> c) 2000<br>
+                    <input type="radio" name="q2" value="d"> d) 1980<br>
+                </div>
+
+                <div>
+                    <p>3. Seleccione tres fabricantes que se unieron para formar Symbian Os.</p>
+                    <input type="checkbox" name="q3" value="a"> a) Samsung<br>
+                    <input type="checkbox" name="q3" value="b"> b) Nokia<br>
+                    <input type="checkbox" name="q3" value="c"> c) Xiaomi<br>
+                    <input type="checkbox" name="q3" value="d"> d) Redmi<br>
+                    <input type="checkbox" name="q3" value="e"> e) Motorola<br>
+                    <input type="checkbox" name="q3" value="f"> f) Ericsson<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Cuál fue la interfaz gráfica de Nokia para el Sistema Operativo Symbian?</p>
+                    <input type="radio" name="q4" value="a"> a) MIUI<br>
+                    <input type="radio" name="q4" value="b"> b) S60<br>
+                    <input type="radio" name="q4" value="c"> c) MOAP<br>
+                    <input type="radio" name="q4" value="d"> d) UIQ<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Qué tipo de arquitecturas tiene el Sistema Operativo Symbian?</p>
+                    <input type="radio" name="q5" value="a"> a) Capas<br>
+                    <input type="radio" name="q5" value="b"> b) Cliente servidor<br>
+                    <input type="radio" name="q5" value="c"> c) Servicios<br>
+                    <input type="radio" name="q5" value="d"> d) Monolítica<br>
+                </div>
+
+                <div>
+                    <p>6. ¿El kernel de Symbian Os es un microkernel, ya que los servicios principales se han movido
+                        fuera de este?</p>
+                    <input type="radio" name="q6" value="a"> a) Verdadero<br>
+                    <input type="radio" name="q6" value="b"> b) Falso<br>
+                </div>
+
+                <div>
+                    <p>7. ¿La capa Java ME tiene un conjunto de interfaces de programación de aplicación para que las
+                        diferentes empresas que producen equipos que soportan este sistema operativo puedan modificar
+                        las aplicaciones a los requisitos de sus equipos creando así diversas plataformas del sistema
+                        operativo?</p>
+                    <input type="radio" name="q7" value="a"> a) Verdadero<br>
+                    <input type="radio" name="q7" value="b"> b) Falso<br>
+                </div>
+
+                <div>
+                    <p>8. Seleccione las dos versiones de Kernel que existieron para Symbian Os.</p>
+                    <input type="checkbox" name="q8" value="a"> a) EKA1<br>
+                    <input type="checkbox" name="q8" value="b"> b) EKA117<br>
+                    <input type="checkbox" name="q8" value="c"> c) EKA2<br>
+                    <input type="checkbox" name="q8" value="d"> d) EKA2L1<br>
+                </div>
+
+                <div>
+                    <p>9. Dado que en Symbian Os, existe una relación cliente-servidor entre los componentes del
+                        sistema, si necesitamos el servicio de “archivos”, ¿A qué servidor debería recurrir el sistema?
+                    </p>
+                    <input type="radio" name="q9" value="a"> a) Servidor de Windows<br>
+                    <input type="radio" name="q9" value="b"> b) Servidor fuentes y mapas de bits<br>
+                    <input type="radio" name="q9" value="c"> c) Servidor de archivos<br>
+                    <input type="radio" name="q9" value="d"> d) Servidor de serie<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Qué capa de la Arquitectura de Symbian es más personalizable, dependiendo de los hardware?
+                    </p>
+                    <input type="radio" name="q10" value="a"> a) Capa UI Framework<br>
+                    <input type="radio" name="q10" value="b"> b) Servicios de Aplicación<br>
+                    <input type="radio" name="q10" value="c"> c) Java Micro Edition (Java ME)<br>
+                    <input type="radio" name="q10" value="d"> d) Servicios del Sistema Operativo<br>
+                    <input type="radio" name="q10" value="e"> e) Servicios base<br>
+                    <input type="radio" name="q10" value="f"> f) Arquitectura Kernel<br>
+                </div>
+
+                <div>
+                    <p>11. Seleccione una causa principal de la caída de Symbian Os.</p>
+                    <input type="radio" name="q11" value="a"> a) Falta de personal para el mantenimiento del sistema
+                    operativo.<br>
+                    <input type="radio" name="q11" value="b"> b) Abandonado por Nokia en favor de Windows Phone.<br>
+                    <input type="radio" name="q11" value="c"> c) Vulnerabilidad del sistema.<br>
+                    <input type="radio" name="q11" value="d"> d) Abundancia de App, debido a la variedad de
+                    Dispositivo.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_SymbianOs.js"></script>
+</body>
+
+</html>

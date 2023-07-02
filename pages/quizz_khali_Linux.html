@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>71. ¿Es una distribución de Linux basada en?</p>
+                    <input type="radio" name="q71" value="a"> A. Ubuntu.<br>
+                    <input type="radio" name="q71" value="b"> B. Debian.<br>
+                    <input type="radio" name="q71" value="c"> C. Gentoo.<br>
+                    <input type="radio" name="q71" value="d"> D. Fedora.<br>
+                </div>
+
+                <div>
+                    <p>72. ¿Diseñado para?</p>
+                    <input type="radio" name="q72" value="a"> A. Uso del hogar.<br>
+                    <input type="radio" name="q72" value="b"> B. Interfaces móviles.<br>
+                    <input type="radio" name="q72" value="c"> C. Temas de seguridad.<br>
+                    <input type="radio" name="q72" value="d"> D. Crear virus.<br>
+                </div>
+
+                <div>
+                    <p>73. ¿Cuál de las siguientes NO ES una herramienta de Kali Linux?</p>
+                    <input type="radio" name="q73" value="a"> A. Bleachbit.<br>
+                    <input type="radio" name="q73" value="b"> B. Wireshark.<br>
+                    <input type="radio" name="q73" value="c"> C. Nmap.<br>
+                    <input type="radio" name="q73" value="d"> D. Msfvenom.<br>
+                </div>
+
+                <div>
+                    <p>74. Kali Linux puede ser usado en:</p>
+                    <input type="radio" name="q74" value="a"> A. Computadoras.<br>
+                    <input type="radio" name="q74" value="b"> B. Celulares.<br>
+                    <input type="radio" name="q74" value="c"> C. Online.<br>
+                    <input type="radio" name="q74" value="d"> D. Todas las anteriores.<br>
+                </div>
+
+                <div>
+                    <p>75. Una de las principales funciones de Kali Linux es:</p>
+                    <input type="radio" name="q75" value="a"> A. Sniffing and Spoofing.<br>
+                    <input type="radio" name="q75" value="b"> B. Desarrollo de aplicaciones.<br>
+                    <input type="radio" name="q75" value="c"> C. Manage processes.<br>
+                    <input type="radio" name="q75" value="d"> D. Distribuir información.<br>
+                </div>
+
+                <div>
+                    <p>76. Seleccione la característica errónea de Kali Linux:</p>
+                    <input type="radio" name="q76" value="a"> A. Es gratuita.<br>
+                    <input type="radio" name="q76" value="b"> B. Tiene una jerarquía FHS.<br>
+                    <input type="radio" name="q76" value="c"> C. Está desarrollado por una empresa de seguridad.<br>
+                    <input type="radio" name="q76" value="d"> D. Tiene solo 5 herramientas.<br>
+                </div>
+
+                <div>
+                    <p>77. Kali Linux solo funciona con lenguaje C:</p>
+                    <input type="radio" name="q77" value="a"> A. Verdadero.<br>
+                    <input type="radio" name="q77" value="b"> B. Falso.<br>
+                </div>
+
+                <div>
+                    <p>78. La empresa que desarrolló Kali Linux es:</p>
+                    <input type="radio" name="q78" value="a"> A. Oracle.<br>
+                    <input type="radio" name="q78" value="b"> B. Microsoft.<br>
+                    <input type="radio" name="q78" value="c"> C. Offensive Security.<br>
+                    <input type="radio" name="q78" value="d"> D. Canonical Ltd.<br>
+                </div>
+
+                <div>
+                    <p>79. Kali Linux tuvo soporte hasta el año 2018:</p>
+                    <input type="radio" name="q79" value="a"> A. Verdadero.<br>
+                    <input type="radio" name="q79" value="b"> B. Falso.<br>
+                </div>
+
+                <div>
+                    <p>80. Seleccione el uso menos común de Kali Linux:</p>
+                    <input type="radio" name="q80" value="a"> A. Hackear.<br>
+                    <input type="radio" name="q80" value="b"> B. Seguridad de Empresas.<br>
+                    <input type="radio" name="q80" value="c"> C. Navegar por la Deep web.<br>
+                    <input type="radio" name="q80" value="d"> D. Desarrollar antivirus.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_khali_Linux.js"></script>
+</body>
+
+</html>

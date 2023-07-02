@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Qué es NUI?</p>
+                    <input type="radio" name="q1" value="a"> A. Es una interfaz de texto, a la que se accede mediante
+                    comandos en prompts.<br>
+                    <input type="radio" name="q1" value="b"> B. Utiliza un conjunto de imágenes y objetos gráficos para
+                    representar la información y acciones disponibles en la interfaz.<br>
+                    <input type="radio" name="q1" value="c"> C. Es aquella en las que se interactúa con un sistema,
+                    aplicación, etc., sin utilizar sistemas de mando o dispositivos de entrada en su lugar, se hace uso
+                    de movimientos gestuales tales como las manos o el cuerpo es el mismo mando de control.<br>
+                </div>
+
+                <div>
+                    <p>2. Seleccione dos características de las NUI.</p>
+                    <input type="checkbox" name="q2" value="a"> A. Directa<br>
+                    <input type="checkbox" name="q2" value="b"> B. Visible al usuario<br>
+                    <input type="checkbox" name="q2" value="c"> C. Intuitiva<br>
+                </div>
+
+                <div>
+                    <p>3. Escoja un ejemplo correcto de NUI.</p>
+                    <input type="radio" name="q3" value="a"> A. Guitar Hero<br>
+                    <input type="radio" name="q3" value="b"> B. El Xbox Kinect<br>
+                    <input type="radio" name="q3" value="c"> C. FIFA 2022<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Qué es Xbox Kinect?</p>
+                    <input type="radio" name="q4" value="a"> A. Fue un controlador de juego libre y entretenimiento
+                    creado por Alex Kipman, desarrollado por Microsoft para la videoconsola Xbox 360, y desde junio de
+                    2011 para PC a través de Windows 7 y Windows 8.<br>
+                    <input type="radio" name="q4" value="b"> B. Es una videoconsola de Sony Interactive
+                    Entertainment.<br>
+                    <input type="radio" name="q4" value="c"> C. Es un juego de aventuras desarrollado en el año
+                    2013.<br>
+                </div>
+
+                <div>
+                    <p>5. Seleccione dos sistemas operativos que comenzaron con el uso de las NUI.</p>
+                    <input type="checkbox" name="q5" value="a"> A. Android y Unity<br>
+                    <input type="checkbox" name="q5" value="b"> B. Mac OS X<br>
+                </div>
+
+                <div>
+                    <p>6. Seleccione dos requerimientos de hardware que se necesita para poder utilizar las NUI.</p>
+                    <input type="checkbox" name="q6" value="a"> A. Sensor 3D<br>
+                    <input type="checkbox" name="q6" value="b"> B. Cámara R<br>
+                    <input type="checkbox" name="q6" value="c"> C. Pantalla táctil<br>
+                </div>
+
+                <div>
+                    <p>7. Seleccione una ventaja de las NUI.</p>
+                    <input type="radio" name="q7" value="a"> A. Es complicada de aprender su manejo.<br>
+                    <input type="radio" name="q7" value="b"> B. No es intuitiva.<br>
+                    <input type="radio" name="q7" value="c"> C. Desarrolla habilidades físicas y motoras.<br>
+                </div>
+
+                <div>
+                    <p>8. Seleccione dos limitaciones de las NUI.</p>
+                    <input type="checkbox" name="q8" value="a"> A. Es fácil socializar su uso de forma masiva.<br>
+                    <input type="checkbox" name="q8" value="b"> B. Pudiera no interpretarse bien un gesto.<br>
+                    <input type="checkbox" name="q8" value="c"> C. El costo de estos equipos es muy bajo.<br>
+                </div>
+
+                <div>
+                    <p>9. Escoja dos requerimientos de software que se necesita para poder utilizar las NUI.</p>
+                    <input type="checkbox" name="q9" value="a"> A. Algoritmo de detección y análisis de cuerpo
+                    completo.<br>
+                    <input type="checkbox" name="q9" value="b"> B. Algoritmo de detección de mando inalámbrico.<br>
+                    <input type="checkbox" name="q9" value="c"> C. Algoritmo de análisis de escena con la posición de
+                    los diversos objetos.<br>
+                </div>
+
+                <div>
+                    <p>10. Seleccione la sigla correcta de la interfaz de usuario natural.</p>
+                    <input type="radio" name="q10" value="a"> A. GUI<br>
+                    <input type="radio" name="q10" value="b"> B. CLI<br>
+                    <input type="radio" name="q10" value="c"> C. NUI<br>
+                </div>
+
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_NUI.js"></script>
+</body>
+
+</html>

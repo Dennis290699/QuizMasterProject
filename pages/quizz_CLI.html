@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Qué significan las siglas CLI?</p>
+                    <input type="radio" name="q1" value="a"> A. Interfaz de Línea de Comandos.<br>
+                    <input type="radio" name="q1" value="b"> B. Infraestructura de lenguaje común<br>
+                    <input type="radio" name="q1" value="c"> C. Combs Lab InC.<br>
+                    <input type="radio" name="q1" value="d"> D. Investigador legal certificado.<br>
+                </div>
+
+                <div>
+                    <p>2. ¿En qué sistemas se utiliza Bash?</p>
+                    <input type="radio" name="q2" value="a"> A. Firefox OS<br>
+                    <input type="radio" name="q2" value="b"> B. Ubuntu<br>
+                    <input type="radio" name="q2" value="c"> C. Linux y macOS.<br>
+                    <input type="radio" name="q2" value="d"> D. Windows.<br>
+                </div>
+
+                <div>
+                    <p>3. ¿En qué año y versión apareció Bash?</p>
+                    <input type="radio" name="q3" value="a"> A. Año 1950, versión 1.<br>
+                    <input type="radio" name="q3" value="b"> B. Año 1974, versión 9.<br>
+                    <input type="radio" name="q3" value="c"> C. Año 1925, versión 7.<br>
+                    <input type="radio" name="q3" value="d"> D. Año 1977, versión 7.<br>
+                </div>
+
+                <div>
+                    <p>4. Además de ejecutar comandos, ¿cómo más podemos usar el CMD?</p>
+                    <input type="radio" name="q4" value="a"> A. Programar scripts.<br>
+                    <input type="radio" name="q4" value="b"> B. Administrar archivos y directorios.<br>
+                    <input type="radio" name="q4" value="c"> C. Crear programas.<br>
+                    <input type="radio" name="q4" value="d"> D. Conexión remota a otros ordenadores.<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Cuán complejos eran los primeros comandos que CMD podía ejecutar?</p>
+                    <input type="radio" name="q5" value="a"> A. Eran comandos relativamente sencillos.<br>
+                    <input type="radio" name="q5" value="b"> B. Eran comandos sumamente complejos.<br>
+                    <input type="radio" name="q5" value="c"> C. Eran comandos en lenguaje binario.<br>
+                    <input type="radio" name="q5" value="d"> D. No podía ejecutar comandos.<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Para qué sistemas operativos está disponible PowerShell?</p>
+                    <input type="radio" name="q6" value="a"> A. Sistemas operativos Linux<br>
+                    <input type="radio" name="q6" value="b"> B. Sistemas operativos Windows<br>
+                    <input type="radio" name="q6" value="c"> C. Sistemas operativos Mac<br>
+                    <input type="radio" name="q6" value="d"> D. Sistemas operativos Android<br>
+                </div>
+
+                <div>
+                    <p>7. ¿En qué año y con qué nombre se diseñó PowerShell?</p>
+                    <input type="radio" name="q7" value="a"> A. Año 2015, nombre POWER.<br>
+                    <input type="radio" name="q7" value="b"> B. Año 1989, nombre SHELL.<br>
+                    <input type="radio" name="q7" value="c"> C. Año 2001, nombre BASH.<br>
+                    <input type="radio" name="q7" value="d"> D. Año 2003, nombre MONAD.<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Cuál es el uso principal que se le da a GIT?</p>
+                    <input type="radio" name="q8" value="a"> A. Repositorio de programas y archivos varios.<br>
+                    <input type="radio" name="q8" value="b"> B. Rastrear cambios en archivos y colaborar en
+                    proyectos.<br>
+                    <input type="radio" name="q8" value="c"> C. Editor de archivos online.<br>
+                    <input type="radio" name="q8" value="d"> D. Responder dudas sobre un tema en particular.<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Qué es Docker?</p>
+                    <input type="radio" name="q9" value="a"> A. Una plataforma que permite distribuir aplicaciones en
+                    entornos aislados llamados contenedores.<br>
+                    <input type="radio" name="q9" value="b"> B. Una plataforma que permite retransmitir videojuegos por
+                    medio de internet a una audiencia.<br>
+                    <input type="radio" name="q9" value="c"> C. Un servicio online para realizar tareas básicas de
+                    programación.<br>
+                    <input type="radio" name="q9" value="d"> D. Un aplicativo con el propósito de comprimir archivos
+                    varios.<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Cuál es la ventaja principal de usar una CLI?</p>
+                    <input type="radio" name="q10" value="a"> A. No se requiere de ningún conocimiento previo.<br>
+                    <input type="radio" name="q10" value="b"> B. No se requiere de una interfaz gráfica.<br>
+                    <input type="radio" name="q10" value="c"> C. Cuenta con una interfaz gráfica propia.<br>
+                    <input type="radio" name="q10" value="d"> D. Suelen ser programas sencillos de utilizar.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_CLI.js"></script>
+</body>
+
+</html>

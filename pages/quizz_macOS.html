@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿En qué año salió macOS Catalina?</p>
+                    <input type="radio" name="q1" value="a"> a) 2020<br>
+                    <input type="radio" name="q1" value="b"> b) 2019<br>
+                    <input type="radio" name="q1" value="c"> c) 2018<br>
+                    <input type="radio" name="q1" value="d"> d) 2022<br>
+                </div>
+
+                <div>
+                    <p>2. ¿En qué año salió macOS Big Sur?</p>
+                    <input type="radio" name="q2" value="a"> a) 2020<br>
+                    <input type="radio" name="q2" value="b"> b) 2019<br>
+                    <input type="radio" name="q2" value="c"> c) 2018<br>
+                    <input type="radio" name="q2" value="d"> d) 2022<br>
+                </div>
+
+                <div>
+                    <p>3. ¿En qué año salió macOS Monterey?</p>
+                    <input type="radio" name="q3" value="a"> a) 2021<br>
+                    <input type="radio" name="q3" value="b"> b) 2019<br>
+                    <input type="radio" name="q3" value="c"> c) 2018<br>
+                    <input type="radio" name="q3" value="d"> d) 2022<br>
+                </div>
+
+                <div>
+                    <p>4. ¿En qué año salió macOS Ventura?</p>
+                    <input type="radio" name="q4" value="a"> a) 2021<br>
+                    <input type="radio" name="q4" value="b"> b) 2019<br>
+                    <input type="radio" name="q4" value="c"> c) 2018<br>
+                    <input type="radio" name="q4" value="d"> d) 2022<br>
+                </div>
+
+                <div>
+                    <p>5. Una de las mejoras que trajo macOS Catalina fue:</p>
+                    <input type="radio" name="q5" value="a"> a) Diseño de Siri<br>
+                    <input type="radio" name="q5" value="b"> b) Un rediseño de navegador Safari<br>
+                    <input type="radio" name="q5" value="c"> c) Modo oscuro<br>
+                    <input type="radio" name="q5" value="d"> d) Conectividad con iPhone<br>
+                </div>
+
+                <div>
+                    <p>6. Los procesadores ARM son ideales para aplicaciones de:</p>
+                    <input type="radio" name="q6" value="a"> a) Baja potencia<br>
+                    <input type="radio" name="q6" value="b"> b) Alta potencia<br>
+                    <input type="radio" name="q6" value="c"> c) Mediana potencia<br>
+                    <input type="radio" name="q6" value="d"> d) Ninguna de las anteriores<br>
+                </div>
+
+                <div>
+                    <p>7. Los procesadores ARM son diseñados por:</p>
+                    <input type="radio" name="q7" value="a"> a) Windows<br>
+                    <input type="radio" name="q7" value="b"> b) IBM<br>
+                    <input type="radio" name="q7" value="c"> c) AMD<br>
+                    <input type="radio" name="q7" value="d"> d) Apple<br>
+                </div>
+
+                <div>
+                    <p>8. Una de las mejoras que tiene macOS Monterey:</p>
+                    <input type="radio" name="q8" value="a"> a) Bajo consumo de energía<br>
+                    <input type="radio" name="q8" value="b"> b) Mejora de seguridad<br>
+                    <input type="radio" name="q8" value="c"> c) Control de voz<br>
+                    <input type="radio" name="q8" value="d"> d) Mejoras en la búsqueda<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Cuál fue la primera versión de macOS en admitir aplicaciones de x64 bits?</p>
+                    <input type="radio" name="q9" value="a"> a) Monterey<br>
+                    <input type="radio" name="q9" value="b"> b) Big Sur<br>
+                    <input type="radio" name="q9" value="c"> c) Catalina<br>
+                    <input type="radio" name="q9" value="d"> d) Ventura<br>
+                </div>
+
+                <div>
+                    <p>10. Una de las principales funciones de macOS Ventura es:</p>
+                    <input type="radio" name="q10" value="a"> a) Mejoras de audio y video de FaceTime.<br>
+                    <input type="radio" name="q10" value="b"> b) Nota rápida te permite tomar notas en cualquier app o
+                    sitio web.<br>
+                    <input type="radio" name="q10" value="c"> c) Protección de la privacidad en Mail ayuda a evitar que
+                    los remitentes rastreen tu actividad en Mail.<br>
+                    <input type="radio" name="q10" value="d"> d) Utilizar un iPhone como cámara web de forma
+                    inalámbrica.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_macOS.js"></script>
+</body>
+
+</html>

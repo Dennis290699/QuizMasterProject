@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>51. Actualmente, ¿para poder utilizar el sistema IBM S400 es necesario pagar un mantenimiento
+                        mensual?</p>
+                    <input type="radio" name="q51" value="a"> A. Verdadero.<br>
+                    <input type="radio" name="q51" value="b"> B. Está gratis en Internet.<br>
+                    <input type="radio" name="q51" value="c"> C. Ninguna de las anteriores.<br>
+                </div>
+
+                <div>
+                    <p>52. ¿Cuál es el comando para crear una librería?</p>
+                    <input type="radio" name="q52" value="a"> A. strlib.<br>
+                    <input type="radio" name="q52" value="b"> B. crtlib.<br>
+                    <input type="radio" name="q52" value="c"> C. newlib.<br>
+                </div>
+
+                <div>
+                    <p>53. ¿Cuál es el comando para inicializar un contenedor?</p>
+                    <input type="radio" name="q53" value="a"> A. openpdm.<br>
+                    <input type="radio" name="q53" value="b"> B. shwpdm.<br>
+                    <input type="radio" name="q53" value="c"> C. strpdm.<br>
+                </div>
+
+                <div>
+                    <p>54. Cuando no se puede escribir en la línea de abajo dando Enter, ¿cuál es el comando para abrir
+                        una nueva línea de texto?</p>
+                    <input type="radio" name="q54" value="a"> A. I en el primer término numérico de la línea que se toma
+                    como referencia para escribir debajo.<br>
+                    <input type="radio" name="q54" value="b"> B. I en el último término numérico de la línea que se toma
+                    como referencia para escribir debajo.<br>
+                    <input type="radio" name="q54" value="c"> C. I en el final de la línea que se toma como referencia
+                    para escribir debajo.<br>
+                </div>
+
+                <div>
+                    <p>55. Para poder llenar una tabla con datos, ¿de qué tipo debe ser el comando que encabece la
+                        tabla?</p>
+                    <input type="radio" name="q55" value="a"> A. S.<br>
+                    <input type="radio" name="q55" value="b"> B. A.<br>
+                    <input type="radio" name="q55" value="c"> C. R.<br>
+                </div>
+
+                <div>
+                    <p>56. ¿Es posible crear nuevas librerías con T2550J?</p>
+                    <input type="radio" name="q56" value="a"> A. Verdadero.<br>
+                    <input type="radio" name="q56" value="b"> B. Falso.<br>
+                </div>
+
+                <div>
+                    <p>57. ¿Para qué sirve la A en el editor Zeus?</p>
+                    <input type="radio" name="q57" value="a"> A. Para poder escribir texto antes de la letra A.<br>
+                    <input type="radio" name="q57" value="b"> B. Para poder escribir texto después de la letra A.<br>
+                    <input type="radio" name="q57" value="c"> C. Para poder escribir comandos después de la letra A.<br>
+                </div>
+
+                <div>
+                    <p>58. Si se escribe un * después de la letra A en Zeus, ¿cambia el comando?</p>
+                    <input type="radio" name="q58" value="a"> A. Verdadero.<br>
+                    <input type="radio" name="q58" value="b"> B. Falso.<br>
+                </div>
+
+                <div>
+                    <p>59. ¿Para qué sirve el comando STRDFU?</p>
+                    <input type="radio" name="q59" value="a"> A. Para leer archivos guardados en un txt.<br>
+                    <input type="radio" name="q59" value="b"> B. Para guardar archivos en un txt.<br>
+                    <input type="radio" name="q59" value="c"> C. Para guardar archivos en una tabla.<br>
+                </div>
+
+                <div>
+                    <p>60. ¿Para qué sirve el comando DSPPFM?</p>
+                    <input type="radio" name="q60" value="a"> A. Para guardar archivos de un txt.<br>
+                    <input type="radio" name="q60" value="b"> B. Para leer archivos de una tabla.<br>
+                    <input type="radio" name="q60" value="c"> C. Para guardar archivos de una tabla.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_IBMs400.js"></script>
+</body>
+
+</html>

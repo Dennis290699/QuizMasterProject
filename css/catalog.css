@@ -1,0 +1,59 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.quiz-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quiz-item {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
+.quiz-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.quiz-item h2 {
+  font-size: 18px;
+}
+
+.quiz-item a {
+  text-decoration: none;
+  color: #333;
+  display: none;
+  margin-top: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button[type="cancel"] {
+  background-color: #f44336;
+  margin-left: 10px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

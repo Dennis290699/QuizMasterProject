@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>61. ¿Qué empresa es responsable del desarrollo y soporte de Solaris en la actualidad?</p>
+                    <input type="radio" name="q61" value="a"> A. Sun Microsystems.<br>
+                    <input type="radio" name="q61" value="b"> B. Microsoft.<br>
+                    <input type="radio" name="q61" value="c"> C. Oracle.<br>
+                    <input type="radio" name="q61" value="d"> D. IBM.<br>
+                </div>
+
+                <div>
+                    <p>62. ¿Cuál es la interfaz gráfica usada por Solaris?</p>
+                    <input type="radio" name="q62" value="a"> A. KDE.<br>
+                    <input type="radio" name="q62" value="b"> B. CDE.<br>
+                    <input type="radio" name="q62" value="c"> C. GNOME.<br>
+                    <input type="radio" name="q62" value="d"> D. X Window System.<br>
+                </div>
+
+                <div>
+                    <p>63. ¿Cuál de los literales es correcto?</p>
+                    <input type="radio" name="q63" value="a"> A. Solaris está basado en el kernel de Linux.<br>
+                    <input type="radio" name="q63" value="b"> B. Es un S.O de código abierto.<br>
+                    <input type="radio" name="q63" value="c"> C. Solo llegó a su versión 10.<br>
+                    <input type="radio" name="q63" value="d"> D. Inicialmente fue desarrollado por Sun Microsystems.<br>
+                </div>
+
+                <div>
+                    <p>64. ¿Qué lenguaje de programación es usado para desarrollar aplicaciones en Solaris?</p>
+                    <input type="radio" name="q64" value="a"> A. Python.<br>
+                    <input type="radio" name="q64" value="b"> B. C++.<br>
+                    <input type="radio" name="q64" value="c"> C. Java.<br>
+                    <input type="radio" name="q64" value="d"> D. C#.<br>
+                </div>
+
+                <div>
+                    <p>65. ¿En qué ámbito es implementado Solaris?</p>
+                    <input type="radio" name="q65" value="a"> A. Educativos.<br>
+                    <input type="radio" name="q65" value="b"> B. Empresariales.<br>
+                    <input type="radio" name="q65" value="c"> C. Domésticos.<br>
+                    <input type="radio" name="q65" value="d"> D. Gubernamentales.<br>
+                </div>
+
+                <div>
+                    <p>66. ¿Qué sistema de archivos es usado por el S.O?</p>
+                    <input type="radio" name="q66" value="a"> A. HFS+.<br>
+                    <input type="radio" name="q66" value="b"> B. ext4.<br>
+                    <input type="radio" name="q66" value="c"> C. NTFS.<br>
+                    <input type="radio" name="q66" value="d"> D. ZFS.<br>
+                </div>
+
+                <div>
+                    <p>67. ¿Cuál es el comando que se usa para visualizar la configuración de red?</p>
+                    <input type="radio" name="q67" value="a"> A. ifconfig.<br>
+                    <input type="radio" name="q67" value="b"> B. ipconfig.<br>
+                    <input type="radio" name="q67" value="c"> C. route.<br>
+                    <input type="radio" name="q67" value="d"> D. netstat.<br>
+                </div>
+
+                <div>
+                    <p>68. ¿Cuál de las siguientes opciones describe una mejora clave en Solaris 11?</p>
+                    <input type="radio" name="q68" value="a"> A. Mejoras en la terminal de comandos.<br>
+                    <input type="radio" name="q68" value="b"> B. Editor HTML Bluefish.<br>
+                    <input type="radio" name="q68" value="c"> C. Nueva interfaz gráfica.<br>
+                    <input type="radio" name="q68" value="d"> D. Planificador y herramientas de gestión de proyectos
+                    (OpenProject).<br>
+                </div>
+
+                <div>
+                    <p>69. ¿Por qué razón Solaris no da un salto de versión?</p>
+                    <input type="radio" name="q69" value="a"> A. Tiene limitación con el hardware (compatibilidad).<br>
+                    <input type="radio" name="q69" value="b"> B. Falta de interés por parte de los desarrolladores.<br>
+                    <input type="radio" name="q69" value="c"> C. No cuenta con las novedades necesarias desde su versión
+                    11.0.<br>
+                    <input type="radio" name="q69" value="d"> D. Se informó su descontinuación.<br>
+                </div>
+
+                <div>
+                    <p>70. ¿En qué arquitectura se puede implementar Solaris?</p>
+                    <input type="radio" name="q70" value="a"> A. x86 (AMD64/EM64T).<br>
+                    <input type="radio" name="q70" value="b"> B. SPARC (Scalable Processor Architecture).<br>
+                    <input type="radio" name="q70" value="c"> C. Sistemas micronúcleo.<br>
+                    <input type="radio" name="q70" value="d"> D. PowerPC.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_solaris.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Cuál fue el sistema que se ocupó en la modularidad del FireWall de SonicWall para poder
+                        acceder a dispositivos electrónicos y ponerlos en estado de vulnerabilidad?</p>
+                    <input type="radio" name="q1" value="a"> A. Ubuntu12<br>
+                    <input type="radio" name="q1" value="b"> B. Urgent11<br>
+                    <input type="radio" name="q1" value="c"> C. ScarmWL12<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Cuál es el sistema que falló completamente en el año 2006, cuando se introdujo un Malware al
+                        sistema SonicWall que incorporaba los servicios y funcionalidades de VxWorks?</p>
+                    <input type="radio" name="q2" value="a"> A. WindRiver<br>
+                    <input type="radio" name="q2" value="b"> B. Scada<br>
+                    <input type="radio" name="q2" value="c"> C. Sojourner<br>
+                </div>
+
+                <div>
+                    <p>3. En el año 1987 se vendió la primera versión de VxWorks, la cual estaba destinada a ser
+                        utilizada en sistemas ________ que necesitaban una respuesta inmediata en microsegundos (ms)
+                        ante cualquier interrupción en su funcionamiento.</p>
+                    <input type="radio" name="q3" value="a"> A. Premptive<br>
+                    <input type="radio" name="q3" value="b"> B. Prototype<br>
+                    <input type="radio" name="q3" value="c"> C. Embebido<br>
+                </div>
+
+                <div>
+                    <p>4. Mediante qué protocolos informáticos se podían acceder a los dispositivos electrónicos para
+                        encriptar la información y poner en riesgo la seguridad y privacidad de los usuarios que
+                        incorporaban VxWorks?</p>
+                    <input type="radio" name="q4" value="a"> A. TPC/IP<br>
+                    <input type="radio" name="q4" value="b"> B. CATCH/TCP<br>
+                    <input type="radio" name="q4" value="c"> C. TCP/IP<br>
+                </div>
+
+                <div>
+                    <p>5. En qué otro sistema operativo está basado las funcionalidades internas de VxWorks para el
+                        desarrollo de interfaces neuronales, enrutadores, controladores, módulos, sensores, propulsores
+                        de cohetes, para la aplicación de tecnologías modernas?</p>
+                    <input type="radio" name="q5" value="a"> A. Unix<br>
+                    <input type="radio" name="q5" value="b"> B. Mac<br>
+                    <input type="radio" name="q5" value="c"> C. Windows<br>
+                </div>
+
+                <div>
+                    <p>6. Seleccione correctamente, ¿cuál es la definición correcta de un Protocolo Premptive?</p>
+                    <input type="radio" name="q6" value="a"> A. Es aquel protocolo básico en el cual nuestra computadora
+                    toma los SH-4 del host para indexarlos simultáneamente de manera arbitraria en el Heap y realizar la
+                    comunicación entre procesos.<br>
+                    <input type="radio" name="q6" value="b"> B. Es aquel protocolo básico en el cual nuestra computadora
+                    toma los xScale del host para indexarlos simultáneamente de manera ordenada en el Heap y desarrollar
+                    la sincronización entre procesos.<br>
+                    <input type="radio" name="q6" value="c"> C. Es aquel protocolo básico en el cual nuestra computadora
+                    toma los procesamientos centrales en tiempo real para indexarlos simultáneamente en el Heap de
+                    manera arbitraria y elaborar una respuesta rápida ante cualquier falla en su ejecución de
+                    procesos.<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cuál es el controlador que se utilizó para estudiar al planeta Marte desde su superficie
+                        terrestre en 1996?</p>
+                    <input type="radio" name="q7" value="a"> A. Star-System-VxWorks<br>
+                    <input type="radio" name="q7" value="b"> B. Star-System-x86WIND<br>
+                    <input type="radio" name="q7" value="c"> C. Star-System-MaxWellSCP05<br>
+                </div>
+
+                <div>
+                    <p>8. Los sistemas embebidos son básicamente sistemas informáticos usados para realizar funciones
+                        específicas cuyos componentes se hallan integrados en una placa base (MotherBoarD.), donde el
+                        procesamiento central se lleva a cabo gracias a _____:</p>
+                    <input type="radio" name="q8" value="a"> A. Micro Kernels<br>
+                    <input type="radio" name="q8" value="b"> B. Micro Controladores<br>
+                    <input type="radio" name="q8" value="c"> C. Micro Premptives<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Es acaso una de las ventajas de VxWorks: "El desarrollo de multitareas"?</p>
+                    <input type="radio" name="q9" value="a"> A. Verdadero<br>
+                    <input type="radio" name="q9" value="b"> B. Falso<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Es acaso una de las desventajas de VxWorks: "El Costo de adquisición de hardware y
+                        software"?</p>
+                    <input type="radio" name="q10" value="a"> A. Verdadero<br>
+                    <input type="radio" name="q10" value="b"> B. Falso<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_vxWorks.js"></script>
+</body>
+
+</html>

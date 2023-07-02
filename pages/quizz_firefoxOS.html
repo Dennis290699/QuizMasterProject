@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. Firefox OS fue un sistema operativo descontinuado basado en HTML5 con núcleo...</p>
+                    <input type="radio" name="q1" value="a"> a) Windows<br>
+                    <input type="radio" name="q1" value="b"> b) Linux<br>
+                    <input type="radio" name="q1" value="c"> c) Minix<br>
+                    <input type="radio" name="q1" value="d"> d) Android<br>
+                </div>
+
+                <div>
+                    <p>2. Según la historia de Firefox OS, este sistema operativo fue lanzado en el año 2011 basado en
+                        un
+                        proyecto conocido como "Boot to Gecko (B2G)"</p>
+                    <input type="radio" name="q2" value="a"> a) Verdadero<br>
+                    <input type="radio" name="q2" value="b"> b) Falso<br>
+                </div>
+
+                <div>
+                    <p>3. Firefox OS fue diseñado para dispositivos tales como:</p>
+                    <input type="radio" name="q3" value="a"> a) Móviles de gama baja<br>
+                    <input type="radio" name="q3" value="b"> b) Computadoras de escritorio<br>
+                    <input type="radio" name="q3" value="c"> c) Smartphones de gama media<br>
+                    <input type="radio" name="q3" value="d"> d) Tabletas gráficas<br>
+                </div>
+
+                <div>
+                    <p>4. Seleccione algunas características de Firefox OS:</p>
+                    <input type="radio" name="q4" value="a"> a) Interfaz Sencilla<br>
+                    <input type="radio" name="q4" value="b"> b) Poco rendimiento<br>
+                    <input type="radio" name="q4" value="c"> c) Privacidad y seguridad al usuario<br>
+                    <input type="radio" name="q4" value="d"> d) Integración simple con aplicaciones web<br>
+                </div>
+
+                <div>
+                    <p>5. ¿En qué año la Corporación Mozilla decidió finalizar la producción de dispositivos Firefox OS?
+                    </p>
+                    <input type="radio" name="q5" value="a"> a) 2015<br>
+                    <input type="radio" name="q5" value="b"> b) 2016<br>
+                    <input type="radio" name="q5" value="c"> c) 2014<br>
+                    <input type="radio" name="q5" value="d"> d) 2013<br>
+                </div>
+
+                <div>
+                    <p>6. Mozilla Corporation, una vez finalizada la producción de dispositivos Firefox OS, decidió
+                        centrar
+                        sus esfuerzos en productos como Firefox para escritorio y para Android.</p>
+                    <input type="radio" name="q6" value="a"> a) Verdadero<br>
+                    <input type="radio" name="q6" value="b"> b) Falso<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cuáles fueron algunas causas para la desaparición de Firefox OS?</p>
+                    <input type="radio" name="q7" value="a"> a) Falta de soporte por parte de los desarrolladores
+                    móviles<br>
+                    <input type="radio" name="q7" value="b"> b) El sistema operativo tenía muchos errores<br>
+                    <input type="radio" name="q7" value="c"> c) Falta de seguridad al usuario<br>
+                    <input type="radio" name="q7" value="d"> d) Dispositivos únicamente de gama baja<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Cuál era el objetivo de Firefox OS?</p>
+                    <input type="radio" name="q8" value="a"> a) Crear un sistema operativo para escritorio basado en
+                    aplicaciones web<br>
+                    <input type="radio" name="q8" value="b"> b) Crear un sistema operativo móvil de código abierto y
+                    basado en aplicaciones web enfocado en mercados emergentes o de escasos recursos<br>
+                    <input type="radio" name="q8" value="c"> c) Crear un sistema operativo móvil con una alta
+                    complejidad de uso para que la privacidad del usuario no se vea afectada<br>
+                    <input type="radio" name="q8" value="d"> d) Crear un sistema operativo para escritorio basado en
+                    tecnologías como HTML5, CSS y JavaScript<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Cuáles fueron las tecnologías web usadas en Firefox OS?</p>
+                    <input type="radio" name="q9" value="a"> a) HTML5, JavaScript<br>
+                    <input type="radio" name="q9" value="b"> b) Python<br>
+                    <input type="radio" name="q9" value="c"> c) C++<br>
+                    <input type="radio" name="q9" value="d"> d) Ninguna<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Cuál fue una de las ventajas que tuvo en su tiempo Firefox OS?</p>
+                    <input type="radio" name="q10" value="a"> a) Mayor compatibilidad con aplicaciones web y facilidad
+                    para los desarrolladores<br>
+                    <input type="radio" name="q10" value="b"> b) Firefox OS se basó en estándares web de código privado,
+                    lo que permitió a los desarrolladores crear aplicaciones web estándar<br>
+                    <input type="radio" name="q10" value="c"> c) Firefox OS no permitía a los usuarios personalizar su
+                    apariencia y adaptar su dispositivo para mejorar la privacidad y seguridad del usuario<br>
+                    <input type="radio" name="q10" value="d"> d) Firefox OS en sus inicios se posicionó como una
+                    alternativa de alto costo en comparación con otros sistemas operativos móviles<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_firefoxOS.js"></script>
+</body>
+
+</html>

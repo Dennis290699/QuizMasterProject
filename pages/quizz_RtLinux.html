@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Qué significa "RT" en RT Linux?</p>
+                    <input type="radio" name="q1" value="a"> a) Real-Time<br>
+                    <input type="radio" name="q1" value="b"> b) Rapid Technology<br>
+                    <input type="radio" name="q1" value="c"> c) Reliable Terminal<br>
+                    <input type="radio" name="q1" value="d"> d) Robust Toolset<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Cuál de las siguientes afirmaciones describe mejor a RT Linux?</p>
+                    <input type="radio" name="q2" value="a"> a) Un sistema operativo de tiempo real basado en Linux.<br>
+                    <input type="radio" name="q2" value="b"> b) Una distribución de Linux especializada en juegos.<br>
+                    <input type="radio" name="q2" value="c"> c) Un lenguaje de programación utilizado para aplicaciones
+                    en tiempo real.<br>
+                    <input type="radio" name="q2" value="d"> d) Un programa de edición de texto utilizado en entornos
+                    empresariales.<br>
+                </div>
+
+                <div>
+                    <p>3. ¿Cuál es el objetivo principal de RT Linux?</p>
+                    <input type="radio" name="q3" value="a"> a) Proporcionar una interfaz gráfica de usuario
+                    amigable.<br>
+                    <input type="radio" name="q3" value="b"> b) Optimizar el rendimiento de los juegos en Linux.<br>
+                    <input type="radio" name="q3" value="c"> c) Ofrecer capacidades de tiempo real para aplicaciones
+                    críticas.<br>
+                    <input type="radio" name="q3" value="d"> d) Permitir la ejecución de múltiples sistemas operativos
+                    simultáneamente.<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Cuál de las siguientes es una característica clave de RT Linux?</p>
+                    <input type="radio" name="q4" value="a"> a) Programación orientada a objetos.<br>
+                    <input type="radio" name="q4" value="b"> b) Mayor compatibilidad con software de Windows.<br>
+                    <input type="radio" name="q4" value="c"> c) Capacidad para responder rápidamente a eventos en tiempo
+                    real.<br>
+                    <input type="radio" name="q4" value="d"> d) Soporte para gráficos avanzados en 3D.<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Cuál de los siguientes componentes es esencial en la arquitectura de RT Linux?</p>
+                    <input type="radio" name="q5" value="a"> a) Núcleo de Windows.<br>
+                    <input type="radio" name="q5" value="b"> b) Kernel de tiempo real.<br>
+                    <input type="radio" name="q5" value="c"> c) Biblioteca de juegos.<br>
+                    <input type="radio" name="q5" value="d"> d) Controlador de impresora.<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Cuál es uno de los desafíos principales al desarrollar aplicaciones para RT Linux?</p>
+                    <input type="radio" name="q6" value="a"> a) Escasez de herramientas de desarrollo.<br>
+                    <input type="radio" name="q6" value="b"> b) Falta de compatibilidad con hardware estándar.<br>
+                    <input type="radio" name="q6" value="c"> c) Dificultad para integrar con otros sistemas
+                    operativos.<br>
+                    <input type="radio" name="q6" value="d"> d) Garantizar el cumplimiento de los requisitos de tiempo
+                    real.<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cuál de las siguientes aplicaciones se beneficiaría más de RT Linux?</p>
+                    <input type="radio" name="q7" value="a"> a) Procesamiento de texto en tiempo real.<br>
+                    <input type="radio" name="q7" value="b"> b) Reproducción de música en línea.<br>
+                    <input type="radio" name="q7" value="c"> c) Control de sistemas de automatización industrial.<br>
+                    <input type="radio" name="q7" value="d"> d) Navegación web general.<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Cuál de las siguientes afirmaciones sobre RT Linux es verdadera?</p>
+                    <input type="radio" name="q8" value="a"> a) Es una versión de Linux desarrollada por Microsoft.<br>
+                    <input type="radio" name="q8" value="b"> b) Solo se puede ejecutar en hardware dedicado.<br>
+                    <input type="radio" name="q8" value="c"> c) No es compatible con aplicaciones de Linux estándar.<br>
+                    <input type="radio" name="q8" value="d"> d) Combina las capacidades de tiempo real con la base de
+                    Linux.<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Cuál es una ventaja clave de utilizar RT Linux en comparación con otros sistemas operativos
+                        en tiempo real?</p>
+                    <input type="radio" name="q9" value="a"> a) Mayor compatibilidad con hardware antiguo.<br>
+                    <input type="radio" name="q9" value="b"> b) Mayor número de aplicaciones disponibles.<br>
+                    <input type="radio" name="q9" value="c"> c) Mayor facilidad de instalación y configuración.<br>
+                    <input type="radio" name="q9" value="d"> d) Utiliza una base de código cerrada para mayor
+                    estabilidad.<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Cuál es el propósito principal del patch de tiempo real en RT Linux?</p>
+                    <input type="radio" name="q10" value="a"> a) Mejorar el rendimiento gráfico.<br>
+                    <input type="radio" name="q10" value="b"> b) Agregar funciones de virtualización.<br>
+                    <input type="radio" name="q10" value="c"> c) Permitir la ejecución de múltiples tareas en
+                    paralelo.<br>
+                    <input type="radio" name="q10" value="d"> d) Proporcionar garantías de tiempo real al núcleo de
+                    Linux.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_rtLinux.js"></script>
+</body>
+
+</html>

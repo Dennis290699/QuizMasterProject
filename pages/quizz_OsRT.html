@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. Seleccione un algoritmo de sistemas operativos en tiempo real usados para asignar prioridad a
+                        procesos.</p>
+                    <input type="radio" name="q1" value="a"> A. Earlist DeadLine First.<br>
+                    <input type="radio" name="q1" value="b"> B. Random proxy First.<br>
+                    <input type="radio" name="q1" value="c"> C. Rate asyncronic openGl.<br>
+                </div>
+
+                <div>
+                    <p>2. ¿En base a qué aspecto basa la prioridad de ejecución el algoritmo Rate Monotonic scheduling?
+                    </p>
+                    <input type="radio" name="q2" value="a"> A. Uso de RAM.<br>
+                    <input type="radio" name="q2" value="b"> B. Numero de procesos.<br>
+                    <input type="radio" name="q2" value="c"> C. Periodo de ejecución de la tarea.<br>
+                </div>
+
+                <div>
+                    <p>3. ¿En base a qué aspecto basa la prioridad de ejecución el algoritmo Earlist DeadLine First?</p>
+                    <input type="radio" name="q3" value="a"> A. Uso de RAM.<br>
+                    <input type="radio" name="q3" value="b"> B. Fecha límite de ejecución.<br>
+                    <input type="radio" name="q3" value="c"> C. Uso de procesador.<br>
+                </div>
+
+                <div>
+                    <p>4. Seleccione la expresión que se debe cumplir para poder usar el algoritmo "Rate Monotonic
+                        scheduling":</p>
+                    <input type="radio" name="q4" value="a"> A. U = (∑ C/T) < n(2^(1/n)-1).<br>
+                        <input type="radio" name="q4" value="b"> B. c^2 = a^2 + b^2.<br>
+                        <input type="radio" name="q4" value="c"> C. U = (n+2^n (cos(2C+2-2C.)^0.<br>
+                </div>
+
+                <div>
+                    <p>5. Para poder programar el algoritmo "Earlist DeadLine First" se debe cumplir que:</p>
+                    <input type="radio" name="q5" value="a"> A. Las tareas para procesar deben tener el mismo periodo de
+                    ejecución.<br>
+                    <input type="radio" name="q5" value="b"> B. El uso del CPU debe ser menor al 100%.<br>
+                    <input type="radio" name="q5" value="c"> C. Cada tarea debe usar menos de 1Gb de RAM.<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Cómo se calcula el tiempo de programación en el algoritmo "Earlist DeadLine First"?</p>
+                    <input type="radio" name="q6" value="a"> A. Tomamos un número cualquier.<br>
+                    <input type="radio" name="q6" value="b"> B. Calculamos el promedio de los periodos de ejecución de
+                    cada tarea.<br>
+                    <input type="radio" name="q6" value="c"> C. Calculamos el mínimo común múltiplo de los periodos de
+                    ejecución de cada tarea.<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cómo se calcula el tiempo de programación en el algoritmo "Rate Monotonic scheduling"?</p>
+                    <input type="radio" name="q7" value="a"> A. Calculamos la raíz cuadrada del tiempo de todas las
+                    tareas.<br>
+                    <input type="radio" name="q7" value="b"> B. Tomamos un número cualquier.<br>
+                    <input type="radio" name="q7" value="c"> C. Calculamos el mínimo común múltiplo de los periodos de
+                    ejecución de cada tarea.<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Qué sistemas operativos en tiempo real usan el algoritmo "Rate Monotonic scheduling"?</p>
+                    <input type="radio" name="q8" value="a"> A. Neo4j.<br>
+                    <input type="radio" name="q8" value="b"> B. VxWorks.<br>
+                    <input type="radio" name="q8" value="c"> C. Minix.<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Qué sistemas operativos en tiempo real usan el algoritmo "Earlist DeadLine First"?</p>
+                    <input type="radio" name="q9" value="a"> A. QNX.<br>
+                    <input type="radio" name="q9" value="b"> B. VxWorks.<br>
+                    <input type="radio" name="q9" value="c"> C. Windows 8.<br>
+                </div>
+
+                <div>
+                    <p>10. Los procesos de los sistemas operativos en tiempo real se ejecutan en:</p>
+                    <input type="radio" name="q10" value="a"> A. Solo el software del sistema.<br>
+                    <input type="radio" name="q10" value="b"> B. La memoria RAM.<br>
+                    <input type="radio" name="q10" value="c"> C. El procesador.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_OsRt.js"></script>
+</body>
+
+</html>

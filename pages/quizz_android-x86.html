@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Cuándo se lanzó Android-x86?</p>
+                    <input type="radio" name="q1" value="a"> A. Marzo de 2010.<br>
+                    <input type="radio" name="q1" value="b"> B. Septiembre de 2009.<br>
+                    <input type="radio" name="q1" value="c"> C. Julio de 2008.<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Cuál es el objetivo principal de Android-x86?</p>
+                    <input type="radio" name="q2" value="a"> A. Ejecutar aplicaciones de Windows en dispositivos
+                    Android.<br>
+                    <input type="radio" name="q2" value="b"> B. Proporcionar un entorno de desarrollo para aplicaciones
+                    iOS.<br>
+                    <input type="radio" name="q2" value="c"> C. Permitir que el sistema operativo Android se ejecute en
+                    computadoras con arquitectura x86.<br>
+                </div>
+
+                <div>
+                    <p>3. ¿Cuáles son algunas de las ventajas de utilizar Android-x86 en lugar de Android en
+                        dispositivos móviles?</p>
+                    <input type="radio" name="q3" value="a"> A. Mayor duración de la batería.<br>
+                    <input type="radio" name="q3" value="b"> B. Acceso a un entorno de escritorio familiar, uso de
+                    aplicaciones de Android en una pantalla más grande, mayor capacidad de almacenamiento y mayor
+                    control sobre la configuración del sistema.<br>
+                    <input type="radio" name="q3" value="c"> C. Mejor rendimiento en juegos móviles.<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Es Android-x86 compatible con todos los programas y aplicaciones de Android disponibles en la
+                        tienda de Google Play?</p>
+                    <input type="radio" name="q4" value="a"> A. Sí, es compatible con todas las aplicaciones de la
+                    tienda de Google Play.<br>
+                    <input type="radio" name="q4" value="b"> B. No, solo es compatible con aplicaciones desarrolladas
+                    específicamente para Android-x86.<br>
+                    <input type="radio" name="q4" value="c"> C. En general, es compatible con la mayoría de las
+                    aplicaciones, aunque algunas pueden tener requisitos de hardware específicos.<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Qué ventajas ofrece Android-x86 en términos de personalización y modificación del sistema
+                        operativo?</p>
+                    <input type="radio" name="q5" value="a"> A. Mayor rendimiento en dispositivos móviles.<br>
+                    <input type="radio" name="q5" value="b"> B. Mayor seguridad en comparación con Android en
+                    dispositivos móviles.<br>
+                    <input type="radio" name="q5" value="c"> C. Permite una mayor personalización y modificación del
+                    sistema operativo, como la instalación de ROM personalizadas y el acceso a funciones avanzadas de
+                    desarrollo.<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Cuáles son algunos de los desafíos al utilizar Android-x86 en comparación con Android en
+                        dispositivos móviles?</p>
+                    <input type="radio" name="q6" value="a"> A. Compatibilidad con hardware específico de PC, falta de
+                    optimización para pantallas táctiles y posible incompatibilidad con ciertas aplicaciones diseñadas
+                    exclusivamente para dispositivos móviles.<br>
+                    <input type="radio" name="q6" value="b"> B. Mayor consumo de memoria en comparación con dispositivos
+                    móviles.<br>
+                    <input type="radio" name="q6" value="c"> C. Mayor costo en términos de licencias de software.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_android-x86.js"></script>
+</body>
+
+</html>

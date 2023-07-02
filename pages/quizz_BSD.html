@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Cuál es el entorno en el que se utiliza más las distribuciones de BSD?</p>
+                    <input type="radio" name="q21" value="a"> A. Servidores.<br>
+                    <input type="radio" name="q21" value="b"> B. Escritorio Personal.<br>
+                    <input type="radio" name="q21" value="c"> C. Bases de Datos.<br>
+                    <input type="radio" name="q21" value="d"> D. Distribuidores de Carga.<br>
+                </div>
+
+                <div>
+                    <p>2. Seleccione el sistema de archivos, universal para cualquier distribución de BSD:</p>
+                    <input type="radio" name="q22" value="a"> A. ZFS (Zettabyte file system).<br>
+                    <input type="radio" name="q22" value="b"> B. UFS (Unix File System).<br>
+                    <input type="radio" name="q22" value="c"> C. XFS.<br>
+                    <input type="radio" name="q22" value="d"> D. JFS (Journalated File System).<br>
+                </div>
+
+                <div>
+                    <p>3. Seleccione el sistema de archivos, propio de FreeBSD, que se enfoca en la integridad de
+                        información:</p>
+                    <input type="radio" name="q23" value="a"> A. ZFS (Zettabyte file system).<br>
+                    <input type="radio" name="q23" value="b"> B. UFS (Unix File System).<br>
+                    <input type="radio" name="q23" value="c"> C. XFS.<br>
+                    <input type="radio" name="q23" value="d"> D. JFS (Journalated File System).<br>
+                </div>
+
+                <div>
+                    <p>4. El sistema de archivos que es característico de FreeBSD se enfoca en la integridad de
+                        información. ¿Cuál de los siguientes mecanismos no es soportado por el sistema de archivos?</p>
+                    <input type="radio" name="q24" value="a"> A. Copy-On-Write.<br>
+                    <input type="radio" name="q24" value="b"> B. Snapshots.<br>
+                    <input type="radio" name="q24" value="c"> C. RAID’s.<br>
+                    <input type="radio" name="q24" value="d"> D. Verificación de integridad a nivel de RAM.<br>
+                </div>
+
+                <div>
+                    <p>5. Seleccione la terminal de FreeBSD:</p>
+                    <input type="radio" name="q25" value="a"> A. Linux.<br>
+                    <input type="radio" name="q25" value="b"> B. Unix.<br>
+                    <input type="radio" name="q25" value="c"> C. Bash.<br>
+                    <input type="radio" name="q25" value="d"> D. PowerShell.<br>
+                </div>
+
+                <div>
+                    <p>6. Seleccione la distribución de BSD enfocada a la Portabilidad:</p>
+                    <input type="radio" name="q26" value="a"> A. FreeBSD.<br>
+                    <input type="radio" name="q26" value="b"> B. OpenBSD.<br>
+                    <input type="radio" name="q26" value="c"> C. NetBSD.<br>
+                    <input type="radio" name="q26" value="d"> D. NanoBSD.<br>
+                </div>
+
+                <div>
+                    <p>7. Seleccione la distribución de BSD enfocada a la Seguridad:</p>
+                    <input type="radio" name="q27" value="a"> A. OpenBSD.<br>
+                    <input type="radio" name="q27" value="b"> B. FreeBSD.<br>
+                    <input type="radio" name="q27" value="c"> C. NetBSD.<br>
+                    <input type="radio" name="q27" value="d"> D. NanoBSD.<br>
+                </div>
+
+                <div>
+                    <p>8. Seleccione la distribución de BSD enfocada a la Compatibilidad:</p>
+                    <input type="radio" name="q28" value="a"> A. OpenBSD.<br>
+                    <input type="radio" name="q28" value="b"> B. FreeBSD.<br>
+                    <input type="radio" name="q28" value="c"> C. NetBSD.<br>
+                    <input type="radio" name="q28" value="d"> D. NanoBSD.<br>
+                </div>
+
+                <div>
+                    <p>9. Una de las siguientes no es una distribución de BSD, selecciónela:</p>
+                    <input type="radio" name="q29" value="a"> A. NanoBSD.<br>
+                    <input type="radio" name="q29" value="b"> B. FreeBSD.<br>
+                    <input type="radio" name="q29" value="c"> C. OpenBSD.<br>
+                    <input type="radio" name="q29" value="d"> D. NetBSD.<br>
+                </div>
+
+                <div>
+                    <p>10. La consola de BSD está basada en UNIX, pero tiene un elemento adicional a las terminales por
+                        defecto que nos ayuda a navegar por las carpetas, seleccione el comando que nos ahorra:</p>
+                    <input type="radio" name="q30" value="a"> A. pwd.<br>
+                    <input type="radio" name="q30" value="b"> B. ls.<br>
+                    <input type="radio" name="q30" value="c"> C. top.<br>
+                    <input type="radio" name="q30" value="d"> D. cd.<br>
+                </div>
+
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_BSD.js"></script>
+</body>
+
+</html>

@@ -41,6 +41,10 @@ button[type="backButton"] {
   background-color: #f3923e;
 }
 
+button[type="retryButton"] {
+  background-color: #f3923e;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -71,7 +75,7 @@ main {
   font-weight: bold;
 }
 
-.timer {
+.timer, .textspan {
   font-weight: bold;
 }
 
@@ -112,4 +116,21 @@ main {
 
 #retryButton:active {
   background-color: #4CAF50;
+}
+
+
+/* Estilos para respuestas correctas */
+.correct-answer {
+  color: green;
+}
+
+/* Estilos para respuestas incorrectas */
+.incorrect-answer {
+  color: red;
+}
+
+.correct-option {
+  color: green;
+  font-weight: bold;
+  margin-top: 5px;
 }

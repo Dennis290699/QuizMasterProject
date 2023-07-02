@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+        
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Cuál es el comando utilizado para crear un directorio en Minix?</p>
+                    <input type="radio" name="q1" value="a"> a) mkdir<br>
+                    <input type="radio" name="q1" value="b"> b) cd<br>
+                    <input type="radio" name="q1" value="c"> c) ls<br>
+                    <input type="radio" name="q1" value="d"> d) rm<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Cuál de los siguientes editores presenta dos modos: el modo de inserción y el modo de
+                        comandos?</p>
+                    <input type="radio" name="q2" value="a"> a) ed<br>
+                    <input type="radio" name="q2" value="b"> b) vi<br>
+                    <input type="radio" name="q2" value="c"> c) nano<br>
+                    <input type="radio" name="q2" value="d"> d) emacs<br>
+                </div>
+
+                <div>
+                    <p>3. ¿Cuál es el comando utilizado para crear un archivo en Minix con el editor "vi"?</p>
+                    <input type="radio" name="q3" value="a"> a) vi<br>
+                    <input type="radio" name="q3" value="b"> b) touch<br>
+                    <input type="radio" name="q3" value="c"> c) cat<br>
+                    <input type="radio" name="q3" value="d"> d) ed<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Qué combinación de teclas se utiliza en el editor "vi" para entrar en el modo de inserción?
+                    </p>
+                    <input type="radio" name="q4" value="a"> a) i<br>
+                    <input type="radio" name="q4" value="b"> b) e<br>
+                    <input type="radio" name="q4" value="c"> c) s<br>
+                    <input type="radio" name="q4" value="d"> d) a<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Cuál es el comando utilizado para guardar los cambios y salir del editor "vi" en Minix?</p>
+                    <input type="radio" name="q5" value="a"> a) exit<br>
+                    <input type="radio" name="q5" value="b"> b) save<br>
+                    <input type="radio" name="q5" value="c"> c) :wq<br>
+                    <input type="radio" name="q5" value="d"> d) quit<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Cuál es el comando utilizado para mostrar el contenido de un directorio en Minix?</p>
+                    <input type="radio" name="q6" value="a"> a) ls<br>
+                    <input type="radio" name="q6" value="b"> b) cd<br>
+                    <input type="radio" name="q6" value="c"> c) cp<br>
+                    <input type="radio" name="q6" value="d"> d) rm<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Cuál es el comando utilizado para copiar archivos o directorios en Minix?</p>
+                    <input type="radio" name="q7" value="a"> a) mv<br>
+                    <input type="radio" name="q7" value="b"> b) rm<br>
+                    <input type="radio" name="q7" value="c"> c) cp<br>
+                    <input type="radio" name="q7" value="d"> d) ls<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Qué comando se utiliza para cambiar los permisos de acceso a archivos o directorios en Minix?
+                    </p>
+                    <input type="radio" name="q8" value="a"> a) chmod<br>
+                    <input type="radio" name="q8" value="b"> b) chown<br>
+                    <input type="radio" name="q8" value="c"> c) mv<br>
+                    <input type="radio" name="q8" value="d"> d) ps<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Cuál es el comando utilizado para mostrar información en tiempo real sobre los procesos y el
+                        uso de recursos en Minix?</p>
+                    <input type="radio" name="q9" value="a"> a) top<br>
+                    <input type="radio" name="q9" value="b"> b) ping<br>
+                    <input type="radio" name="q9" value="c"> c) ifconfig<br>
+                    <input type="radio" name="q9" value="d"> d) ps<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Qué comando se utiliza para enviar una señal a un proceso y finalizarlo en Minix?</p>
+                    <input type="radio" name="q10" value="a"> a) rm<br>
+                    <input type="radio" name="q10" value="b"> b) cp<br>
+                    <input type="radio" name="q10" value="c"> c) kill<br>
+                    <input type="radio" name="q10" value="d"> d) mv<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_minix_comands.js"></script>
+</body>
+
+</html>

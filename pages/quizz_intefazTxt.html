@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="../assets/brain.png">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Quizz | Comandos Minix</title>
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <span class="textspan">Buena Suerte: <span id="playerName"></span></span>
+            <span class="textspan">Time: <span class="timer">00:00</span></span>
+        </header>
+
+        <div class="grid">
+            <form id="quizForm1">
+                <h2>Preguntas:</h2>
+
+                <div>
+                    <p>1. ¿Qué es una interfaz de texto?</p>
+                    <input type="radio" name="q1" value="a"> A. Una interfaz que utiliza imágenes y gráficos.<br>
+                    <input type="radio" name="q1" value="b"> B. Una interfaz que permite la interacción a través de
+                    texto.<br>
+                    <input type="radio" name="q1" value="c"> C. Una interfaz que solo muestra información estática.<br>
+                    <input type="radio" name="q1" value="d"> D. Una interfaz que solo se utiliza en dispositivos
+                    móviles.<br>
+                </div>
+
+                <div>
+                    <p>2. ¿Cuál de las siguientes es una ventaja de las interfaces de texto?</p>
+                    <input type="radio" name="q2" value="a"> A. Son visualmente atractivas.<br>
+                    <input type="radio" name="q2" value="b"> B. Permiten una comunicación más clara y precisa.<br>
+                    <input type="radio" name="q2" value="c"> C. Son más adecuadas para usuarios con discapacidades
+                    visuales.<br>
+                    <input type="radio" name="q2" value="d"> D. No requieren de un teclado para la interacción.<br>
+                </div>
+
+                <div>
+                    <p>3. ¿Cuál de las siguientes es una desventaja de las interfaces de texto?</p>
+                    <input type="radio" name="q3" value="a"> A. Pueden resultar confusas para los usuarios novatos.<br>
+                    <input type="radio" name="q3" value="b"> B. No son adecuadas para comunicaciones formales.<br>
+                    <input type="radio" name="q3" value="c"> C. Requieren una gran cantidad de memoria para
+                    funcionar.<br>
+                    <input type="radio" name="q3" value="d"> D. No permiten la personalización de la apariencia.<br>
+                </div>
+
+                <div>
+                    <p>4. ¿Qué es un menú desplegable en una interfaz de texto?</p>
+                    <input type="radio" name="q4" value="a"> A. Una lista de opciones que aparece cuando se hace clic en
+                    un botón.<br>
+                    <input type="radio" name="q4" value="b"> B. Un campo de texto donde los usuarios pueden ingresar
+                    información.<br>
+                    <input type="radio" name="q4" value="c"> C. Una ventana emergente que muestra mensajes de error.<br>
+                    <input type="radio" name="q4" value="d"> D. Un tipo de fuente utilizada para mostrar texto en
+                    pantalla.<br>
+                </div>
+
+                <div>
+                    <p>5. ¿Qué es un comando de texto en una interfaz de texto?</p>
+                    <input type="radio" name="q5" value="a"> A. Un botón en la interfaz que permite realizar acciones
+                    específicas.<br>
+                    <input type="radio" name="q5" value="b"> B. Un tipo de fuente utilizado para mostrar texto en
+                    pantalla.<br>
+                    <input type="radio" name="q5" value="c"> C. Un mensaje que se muestra al usuario en caso de
+                    error.<br>
+                    <input type="radio" name="q5" value="d"> D. Una instrucción escrita que se envía al sistema para
+                    realizar una acción.<br>
+                </div>
+
+                <div>
+                    <p>6. ¿Qué es la autocompletar en una interfaz de texto?</p>
+                    <input type="radio" name="q6" value="a"> A. Un proceso de encriptación utilizado para proteger los
+                    datos del usuario.<br>
+                    <input type="radio" name="q6" value="b"> B. Una función que sugiere palabras o frases mientras
+                    escribes.<br>
+                    <input type="radio" name="q6" value="c"> C. Una forma de cambiar el tamaño o estilo del texto en
+                    pantalla.<br>
+                    <input type="radio" name="q6" value="d"> D. Una técnica para mejorar la velocidad de carga de la
+                    interfaz.<br>
+                </div>
+
+                <div>
+                    <p>7. ¿Qué es la paginación en una interfaz de texto?</p>
+                    <input type="radio" name="q7" value="a"> A. Alinear el texto a la izquierda, derecha o al centro de
+                    la pantalla.<br>
+                    <input type="radio" name="q7" value="b"> B. Cambiar el color o estilo del texto para resaltar
+                    ciertas palabras.<br>
+                    <input type="radio" name="q7" value="c"> C. Dividir el contenido en varias páginas para una mejor
+                    organización.<br>
+                    <input type="radio" name="q7" value="d"> D. Mostrar información adicional al pasar el cursor sobre
+                    un elemento.<br>
+                </div>
+
+                <div>
+                    <p>8. ¿Qué es la retroalimentación de texto en una interfaz de texto?</p>
+                    <input type="radio" name="q8" value="a"> A. Informar al usuario sobre el estado o resultado de una
+                    acción.<br>
+                    <input type="radio" name="q8" value="b"> B. Reproducir sonidos al interactuar con el texto en
+                    pantalla.<br>
+                    <input type="radio" name="q8" value="c"> C. Mostrar un mensaje de error al ingresar información
+                    incorrecta.<br>
+                    <input type="radio" name="q8" value="d"> D. Destacar el texto con colores llamativos para captar la
+                    atención.<br>
+                </div>
+
+                <div>
+                    <p>9. ¿Qué es un campo de entrada de texto en una interfaz de texto?</p>
+                    <input type="radio" name="q9" value="a"> A. Un área donde se muestra información importante para el
+                    usuario.<br>
+                    <input type="radio" name="q9" value="b"> B. Una sección de la interfaz reservada para anuncios o
+                    promociones.<br>
+                    <input type="radio" name="q9" value="c"> C. Un espacio donde los usuarios pueden escribir o ingresar
+                    información.<br>
+                    <input type="radio" name="q9" value="d"> D. Un elemento interactivo que permite navegar entre
+                    diferentes secciones.<br>
+                </div>
+
+                <div>
+                    <p>10. ¿Qué es la selección de texto en una interfaz de texto?</p>
+                    <input type="radio" name="q10" value="a"> A. Un proceso de copiar y pegar texto de un lugar a
+                    otro.<br>
+                    <input type="radio" name="q10" value="b"> B. Cambiar el tamaño de fuente del texto en pantalla.<br>
+                    <input type="radio" name="q10" value="c"> C. Resaltar una palabra o frase para aplicar un formato
+                    específico.<br>
+                    <input type="radio" name="q10" value="d"> D. Enviar texto a través de una red de comunicación.<br>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Enviar</button>
+                    <button type="cancel">Salir</button>
+                    <button type="retryButton" id="restartButton" style="display: none;">Reintentar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script defer src="../js/quizz_interfazTxt.js"></script>
+</body>
+
+</html>
