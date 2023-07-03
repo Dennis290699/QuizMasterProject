@@ -128,9 +128,3 @@ main {
 .incorrect-answer {
   color: red;
 }
-
-.correct-option {
-  color: green;
-  font-weight: bold;
-  margin-top: 5px;
-}

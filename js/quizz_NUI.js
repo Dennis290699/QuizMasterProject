@@ -111,13 +111,15 @@ function getCorrectAnswer(questionNumber) {
   // Define las respuestas correctas para cada pregunta
   var answers = {
     "1": "c",
-    "2": ["a", "c"],
+    "2": "c",
     "3": "b",
     "4": "a",
-    "5": ["a", "b"],
-    "6": "c",
-    "7": ["b", "c"],
-    "8": "c"
+    "5": "a",
+    "6": "a",
+    "7": "c",
+    "8": "b",
+    "9": "c",
+    "10": "c"
   };
 
   return answers[questionNumber];
