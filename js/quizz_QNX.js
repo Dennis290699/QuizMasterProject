@@ -111,7 +111,7 @@ function getCorrectAnswer(questionNumber) {
   // Define las respuestas correctas para cada pregunta
   var answers = {
     "1": "a",
-    "2": ["c", "a"],
+    "2": "a",
     "3": "b",
     "4": "c",
     "5": "b",

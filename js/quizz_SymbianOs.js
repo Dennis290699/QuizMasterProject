@@ -112,12 +112,12 @@ function getCorrectAnswer(questionNumber) {
   var answers = {
     "1": "a",
     "2": "a",
-    "3": ["b", "e"],
+    "3": "e",
     "4": "b",
     "5": "a",
     "6": "a",
     "7": "a",
-    "8": ["a", "c"],
+    "8": "a",
     "9": "c",
     "10": "f",
     "11": "b"

@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 20px;
 }
@@ -8,6 +8,52 @@ body {
 h1 {
   text-align: center;
 }
+
+.dedication {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dedication h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dedication p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.dedication p:last-child {
+  margin-bottom: 0;
+}
+
+.dedication span {
+  color: #ff5722;
+}
+
+.dedication .team-icon {
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dedication .team-icon:hover {
+  opacity: 0.8;
+}
+
 
 .quiz-container {
   display: flex;
@@ -51,9 +97,111 @@ h1 {
 button[type="cancel"] {
   background-color: #f44336;
   margin-left: 10px;
+  margin-bottom: 35px;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+
+.accordion-btn {
+  background-color: #f8f8f8;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+  padding: 12px 30px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.accordion-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(69, 69, 69, 0.036);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.accordion-btn:hover::before {
+  opacity: 1;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.accordion-content.show {
+  max-height: 100%; /* Ajusta la altura máxima según tus necesidades */
+  transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-btn::after {
+  content: '\25BE';
+  float: right;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.accordion-content.show + .accordion-btn::after {
+  transform: rotate(-180deg);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+}
+
+#heartIcon {
+  width: 40px;
+  height: 40px;
+  
+}
+
+.heart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.fixed-button.clicked {
+  transform: scale(1.2) translateY(-25px);
+  transition: transform 0.3s ease-in-out;
+}
+
+#heartCount {
+  font-weight: bold;
+}
+
+
